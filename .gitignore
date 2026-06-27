@@ -1,0 +1,17 @@
+﻿# Keep the public repository documentation-only.
+*
+!/.gitignore
+!/README.md
+!/LICENSE.md
+!/CHANGELOG.md
+!/docs/
+!/docs/assets/
+!/docs/assets/screenshots/
+!/docs/assets/screenshots/*.png
+
+# Local release files should be uploaded to GitHub Releases, not committed.
+*.exe
+*.msi
+*.zip
+*.7z
+*.sig
