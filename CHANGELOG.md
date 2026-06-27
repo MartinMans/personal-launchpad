@@ -1,41 +1,21 @@
 # Changelog
 
-## 1.2.0
-
-- Added installed Windows app selection inside App targets, alongside the existing executable picker.
-- Improved App, File, and Folder target selection with a selector row, inline Advanced path editing, and resolved/unresolved target indicators while keeping Website targets as URL inputs.
-- Added installed Windows app icon resolution from the Windows Shell and best-effort Launch Layout positioning through native activation process matching.
-- Fixed installed Windows app icon extraction to preserve transparency when the Windows Shell provides alpha data.
-- Added curated organizational tile colors with theme-tuned subtle tinted surfaces; bundle colors are independent from child item colors, and child item colors are preserved when ungrouped.
-- Automatically normalize targets copied with Windows "Copy as path" by trimming surrounding whitespace and removing one full-value pair of surrounding quotes.
-- Kept bundle item cursors consistent with reorder mode so inner bundle items do not imply click launching while tiles are being reordered.
-- Kept launch arguments unsupported; quoted command strings with arguments are not parsed or modified.
-
-## 1.1.0
-
-- Added an optional Minimize to system tray setting with tray Show and Quit actions.
-- Kept Close as a normal app exit while tray behavior remains opt-in.
-
 ## 1.0.0
 
-- Initial public release of Personal Launchpad for Windows.
-- Added local JSON persistence for activities, settings, and cached icons under `%APPDATA%/PersonalLaunchpad`.
-- Added app, file, folder, and website launch targets.
-- Added activity creation, editing, deletion, delete confirmation, and trim-on-save validation.
-- Added rich icon support with emoji, selected image files, website favicons, and extracted app icons.
-- Added local icon caching and reference-aware cleanup for unused cached icon files.
-- Added Windows startup setting.
-- Added activity bundles with bundle editing, compact item launching, optional item names inside bundle tiles, item ungrouping, and in-dialog item reordering.
-- Added reorder-mode tile merging into bundles and a temporary merge undo toast.
-- Added a visible reorder-mode active indicator.
-- Added lightweight drag feedback and a short confirmation pulse for item tab reordering.
-- Improved icon resolution robustness by preventing competing icon source changes while resolution is active.
-- Added item and bundle name length limits with trim-on-save validation and subtle character-count feedback.
-- Prevented duplicate top-level bundle names while still allowing repeated activity and item names.
-- Improved optional bundle item labels with larger desktop preview cells, one-line truncation, and menu-safe narrow-layout positioning.
-- Improved bundle tile interaction states, Ctrl launch-all feedback, edit affordances, and Activity / Bundle / Item terminology.
-- Added custom frameless window chrome with native-feeling window controls, drag-to-edge Snap behavior, and in-app product identity.
-- Added appearance settings for Dark, Light, and System Default themes.
-- Hid the PowerShell window used during app icon extraction.
+- First binary-only public release of Personal Launchpad for Windows.
+- Added local-first activity storage for apps, installed Windows apps, files, folders, websites, bundles, settings, and cached icons under `%APPDATA%/PersonalLaunchpad`.
+- Added a redesigned target selection workflow for App, File, and Folder activities with selector rows, inline Advanced path editing, and resolved/unresolved target indicators while keeping Website targets focused on URL entry.
+- Added installed Windows app support, including app picking, native activation, icon resolution from the Windows Shell, and improved installed-app icon transparency.
+- Added activity creation, editing, deletion, delete confirmation, trim-on-save validation, name length limits, duplicate bundle-name prevention, and subtle character-count feedback.
+- Added rich icon choices with emoji, selected image files, website favicons, extracted app icons, local icon caching, reference-aware cleanup, and safeguards against competing icon resolution updates.
+- Added curated tile colors for activities and bundles with theme-aware tinting; bundle colors remain independent from child item colors, and child item colors are preserved when ungrouped.
+- Added activity bundles with bundle editing, compact item launching, optional item labels, item reordering, item ungrouping, clearer Activity / Bundle / Item terminology, and polished bundle tile interactions.
+- Added reorder mode with visible active state, lightweight drag feedback, tile merging into bundles, temporary merge undo, and cursor behavior that keeps bundle items from implying launch actions while reordering.
+- Added Launch Layouts for whole-bundle launches with a visual layout editor and best-effort Windows positioning, including improved matching for installed app windows.
+- Added custom frameless Windows chrome with native-feeling window controls, drag-to-edge Snap behavior, centered startup, and in-app product identity.
+- Added Dark, Light, and System Default appearance settings.
+- Added optional launch-at-startup behavior and optional Minimize to system tray behavior with tray Show and Quit actions.
+- Automatically normalizes targets pasted from Windows "Copy as path" by trimming surrounding whitespace and removing one full-value pair of surrounding quotes.
+- Keeps launch arguments unsupported by design; quoted command strings with arguments are not parsed or modified.
 - Fixed NSIS uninstall app-data cleanup for `%APPDATA%/PersonalLaunchpad`.
 - Verified blank first-run behavior with no bundled activity data.

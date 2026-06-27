@@ -8,7 +8,7 @@ The app is local-first: your activities, settings, and cached icons stay on your
 
 Download the current Windows installer from the [GitHub Releases](https://github.com/MartinMans/personal-launchpad/releases) page.
 
-The current release context is `v1.2.0`. Installer files are attached to GitHub Releases and are not committed to this repository.
+The current release context is `v1.0.0`. Installer files are attached to GitHub Releases and are not committed to this repository.
 
 ## Screenshots
 
