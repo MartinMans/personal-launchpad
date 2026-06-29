@@ -8,7 +8,7 @@ The app is local-first: your activities, settings, and cached icons stay on your
 
 Download the current Windows installer from the [GitHub Releases](https://github.com/MartinMans/personal-launchpad/releases) page.
 
-The current release context is `v1.0.0`. Installer files are attached to GitHub Releases and are not committed to this repository.
+The current release context is `v1.0.1`. Installer files are attached to GitHub Releases and are not committed to this repository.
 
 ## Screenshots
 
@@ -36,6 +36,7 @@ Settings in light theme:
 
 - Launch apps, files, folders, and websites from clean activity tiles.
 - Choose App targets from either an executable path or installed Windows apps.
+- Drop files, folders, and apps onto empty launchpad space to create activities quickly.
 - Group related items into bundles, then launch individual bundle items or the whole bundle.
 - Arrange whole-bundle launches with Windows Launch Layouts.
 - Use rich icons: emoji, selected image files, website favicons, and extracted app icons.
@@ -44,8 +45,8 @@ Settings in light theme:
 - Merge tiles into bundles while reordering, with a temporary undo.
 - Edit bundle items, reorder items inside a bundle, and ungroup items back into standalone tiles.
 - Choose Dark, Light, or System Default appearance.
-- Optionally launch Personal Launchpad when Windows starts.
-- Optionally minimize Personal Launchpad to the Windows system tray.
+- Launch Personal Launchpad when Windows starts, enabled by default for new installs.
+- Minimize Personal Launchpad to the Windows system tray, enabled by default for new installs.
 - Keep all user data local.
 
 ## Common Workflows
@@ -57,6 +58,8 @@ Create an activity:
 3. Pick or enter the target. For apps, choose either an executable or an installed app.
 4. Choose an icon source and optional tile color.
 5. Save the activity.
+
+File targets can use filesystem paths or URI/protocol links such as `obsidian://open?vault=Scratch`. Executable app targets support launch arguments in Advanced; installed Windows app IDs do not support arguments in this version.
 
 Create a bundle:
 
