@@ -1,13 +1,18 @@
 # Changelog
 
-## 1.0.1
+## 1.0.2
 
-- Added Quick Drop activity creation for files, folders, and executable apps.
-- Enabled startup, minimize-to-tray, and bundle item names by default for new users while preserving existing saved settings.
+- Added Spaces for organizing activities into up to six named contexts, with migration of existing activities into a default Space.
+- Added Quick Drop activity creation for files, folders, executable apps, and `.url` internet shortcuts.
+- Enabled startup, Open to system tray, minimize-to-tray, and bundle item names by default for new users while preserving existing saved settings.
+- Added a configurable Global Hotkey for summoning Personal Launchpad, defaulting to `Ctrl+Alt+Space`, with editable shortcut settings.
+- Added single-instance support so launching Personal Launchpad again focuses the existing app window.
+- Polished Settings organization for Windows, Shortcuts, Spaces, appearance, and bundle display preferences.
 - Added executable app launch arguments in Advanced, including conservative parsing for pasted quoted executable command lines. Installed Windows app IDs do not support arguments.
 - Added File Advanced support for filesystem paths and URI/protocol links such as `obsidian://open?vault=Scratch`.
 - Suppressed the default Chromium/WebView context menu in release builds.
-- Improved reorder mode with bundle child movement, quick delete shortcuts, and tighter tile icon resize behavior.
+- Improved Reorder Mode with bundle child movement, cross-Space moves, quick delete shortcuts, and tighter tile icon resize behavior.
+- Refreshed release documentation and prepared a generic demo profile for updated screenshots.
 
 ## 1.0.0
 
@@ -20,12 +25,11 @@
 - Added rich icon choices with emoji, selected image files, website favicons, extracted app icons, local icon caching, reference-aware cleanup, and safeguards against competing icon resolution updates.
 - Added curated tile colors for activities and bundles with theme-aware tinting; bundle colors remain independent from child item colors, and child item colors are preserved when ungrouped.
 - Added activity bundles with bundle editing, compact item launching, optional item labels, item reordering, item ungrouping, clearer Activity / Bundle / Item terminology, and polished bundle tile interactions.
-- Added reorder mode with visible active state, lightweight drag feedback, tile merging into bundles, temporary merge undo, and cursor behavior that keeps bundle items from implying launch actions while reordering.
+- Added Reorder Mode with visible active state, lightweight drag feedback, tile merging into bundles, temporary merge undo, and cursor behavior that keeps bundle items from implying launch actions while reordering.
 - Added Launch Layouts for whole-bundle launches with a visual layout editor and best-effort Windows positioning, including improved matching for installed app windows.
 - Added custom frameless Windows chrome with native-feeling window controls, drag-to-edge Snap behavior, centered startup, and in-app product identity.
 - Added Dark, Light, and System Default appearance settings.
 - Added launch-at-startup behavior and Minimize to system tray behavior with tray Show and Quit actions; startup, minimize-to-tray, and bundle item names default on for new users while existing saved settings are preserved.
 - Automatically normalizes targets pasted from Windows "Copy as path" by trimming surrounding whitespace and removing one full-value pair of surrounding quotes.
-- Keeps launch arguments unsupported by design; quoted command strings with arguments are not parsed or modified.
 - Fixed NSIS uninstall app-data cleanup for `%APPDATA%/PersonalLaunchpad`.
 - Verified blank first-run behavior with no bundled activity data.
