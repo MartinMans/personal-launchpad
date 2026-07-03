@@ -3,16 +3,21 @@
 ## 1.0.2
 
 - Added Spaces for organizing activities into up to six named contexts, with migration of existing activities into a default Space.
-- Added Quick Drop activity creation for files, folders, executable apps, and `.url` internet shortcuts.
-- Enabled startup, Open to system tray, minimize-to-tray, and bundle item names by default for new users while preserving existing saved settings.
+- Added Space reordering, startup Space behavior, and cross-Space movement for whole tiles and bundle child items in Reorder Mode.
 - Added a configurable Global Hotkey for summoning Personal Launchpad, defaulting to `Ctrl+Alt+Space`, with editable shortcut settings.
 - Added single-instance support so launching Personal Launchpad again focuses the existing app window.
+- Added Open to system tray startup behavior.
 - Polished Settings organization for Windows, Shortcuts, Spaces, appearance, and bundle display preferences.
+- Refreshed public README structure, screenshots, release documentation, and the generic demo profile.
+
+## 1.0.1
+
+- Added Quick Drop activity creation for files, folders, executable apps, and `.url` internet shortcuts.
+- Enabled startup, minimize-to-tray, and bundle item names by default for new users while preserving existing saved settings.
 - Added executable app launch arguments in Advanced, including conservative parsing for pasted quoted executable command lines. Installed Windows app IDs do not support arguments.
 - Added File Advanced support for filesystem paths and URI/protocol links such as `obsidian://open?vault=Scratch`.
 - Suppressed the default Chromium/WebView context menu in release builds.
-- Improved Reorder Mode with bundle child movement, cross-Space moves, quick delete shortcuts, and tighter tile icon resize behavior.
-- Refreshed release documentation and prepared a generic demo profile for updated screenshots.
+- Improved Reorder Mode with bundle child movement, quick delete shortcuts, and tighter tile icon resize behavior.
 
 ## 1.0.0
 
