@@ -63,7 +63,7 @@ Personal Launchpad supports Windows startup launch, Minimize to system tray, Ope
 
 Download the current Windows installer from the [GitHub Releases](https://github.com/MartinMans/personal-launchpad/releases) page.
 
-The current release context is `v1.0.2`. Installer files are attached to GitHub Releases and are not committed to this repository.
+The current release is `v1.0.3`, distributed as a single Windows x64 NSIS EXE. Install v1.0.3 manually when upgrading from v1.0.2; future releases are available through Settings → Check for updates. See the [release notes](CHANGELOG.md#103) for backup-first MSI transition instructions. Installer files are attached to GitHub Releases and are not committed to this repository.
 
 ## Release Notes
 

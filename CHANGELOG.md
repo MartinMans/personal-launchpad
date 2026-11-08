@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.3
+
+- Check for updates in Settings. Personal Launchpad also checks quietly in the background. You choose when to download and install each signed update.
+- Turn on Always on Top in Settings to keep the Launchpad window above other windows. Your preference is saved.
+- The global hotkey brings Launchpad into focus when you are in another app, restores it when hidden or minimized, and minimizes it or sends it to the tray when it already has focus.
+- Windows releases now use a single x64 NSIS installer.
+
+Upgrading from v1.0.2? Install the v1.0.3 EXE manually once. Future releases will be available through the in-app updater.
+
+If you installed v1.0.2 using the MSI, quit Launchpad completely and back up the entire `%APPDATA%\PersonalLaunchpad` folder for each Windows account that uses the app. Uninstall the MSI in Windows Settings, then verify the data folder is still present. If it is missing, restore the backup with Launchpad closed. Run the NSIS EXE under the same Windows account and verify your activities, Spaces, settings and cached icons before removing the backup.
+
 ## 1.0.2
 
 - Added Spaces for organizing activities into up to six named contexts, with migration of existing activities into a default Space.
