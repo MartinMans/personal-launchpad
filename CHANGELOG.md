@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- Fixed native file, folder, executable-app and custom icon pickers appearing behind Launchpad with Always on Top enabled.
+
 ## 1.0.3
 
 - Check for updates in Settings. Personal Launchpad also checks quietly in the background. You choose when to download and install each signed update.
