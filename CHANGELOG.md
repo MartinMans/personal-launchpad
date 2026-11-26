@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.5
+
+- Fixed activity tiles scrolling behind the Spaces bar. The activity area now shows up to two complete rows with a separate scrollbar and smooth row snapping.
+- Tuned mouse-wheel sensitivity for controlled row changes and faster movement during sustained scrolling.
+- Kept Settings compact with a dedicated update view for release notes, downloads, and installation confirmation.
+- Downloads continue while you use Launchpad; return to the update view when ready to install. Choosing Later keeps the downloaded update ready for the current session.
+- Disabled update controls no longer react visually to clicks.
+
+
 ## 1.0.4
 
 - Fixed native file, folder, executable-app and custom icon pickers appearing behind Launchpad with Always on Top enabled.

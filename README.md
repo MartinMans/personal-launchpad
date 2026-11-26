@@ -1,4 +1,4 @@
-﻿# Personal Launchpad
+# Personal Launchpad
 
 Every day, you open the same apps, folders, files, and websites. Personal Launchpad lets you turn those repeated setups into clean activity tiles and one-click workflows.
 
@@ -35,7 +35,7 @@ Bundle colors stay independent from child item colors. If a colored item is ungr
 
 ### Spaces
 
-Organize your activities into contexts such as Work, Study, Gaming, or Daily. Use the bottom Spaces strip to switch contexts, and right-click a Space label to create, rename, or delete Spaces.
+Organize your activities into contexts such as Work, Study, Gaming, or Daily. Use the bottom Spaces strip to switch contexts, and right-click a Space label to create, rename, or delete Spaces. Activities scroll within their own area, showing up to two complete rows above the Spaces strip.
 
 ### Reorder Mode
 
@@ -59,11 +59,15 @@ Personal Launchpad supports Windows startup launch, Minimize to system tray, Ope
 
 ![Personal Launchpad settings for Windows, Shortcuts, and Spaces](docs/assets/screenshots/settings-shortcuts-spaces.png)
 
+### Updates
+
+Launchpad checks quietly after startup and daily while running. Settings shows whether you are up to date or a new version is available. Nothing downloads or installs without your choice. Downloaded updates stay ready for the current session; choosing Later returns to the ready screen.
+
 ## Download
 
 Download the current Windows installer from the [GitHub Releases](https://github.com/MartinMans/personal-launchpad/releases) page.
 
-The current release is `v1.0.3`, distributed as a single Windows x64 NSIS EXE. Install v1.0.3 manually when upgrading from v1.0.2; future releases are available through Settings → Check for updates. See the [release notes](CHANGELOG.md#103) for backup-first MSI transition instructions. Installer files are attached to GitHub Releases and are not committed to this repository.
+The current release is `v1.0.5`, distributed as a single Windows x64 NSIS EXE. Install v1.0.3 manually when upgrading from v1.0.2; later releases are offered in Settings. When a newer version is available, choose View update to read its release notes and download it. You can keep using Launchpad during the download, then return to install and restart. See the [release notes](CHANGELOG.md#103) for backup-first MSI transition instructions. Installer files are attached to GitHub Releases and are not committed to this repository.
 
 ## Release Notes
 
